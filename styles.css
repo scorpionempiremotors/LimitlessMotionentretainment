@@ -44,16 +44,18 @@ body {
 /* HERO */
 .hero {
   height: 90vh;
-  background:
-    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-    url("assets/lmf-logo.png");
-  background-size: 60%;
-  background-repeat: no-repeat;
-  background-position: right center;
   display: flex;
   align-items: center;
   padding-left: 60px;
-}
+
+  background-image:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("assets/lmf-logo.png");
+
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 55%;
+}}
 
 .hero-text h1 {
   font-size: 3rem;
