@@ -49,29 +49,15 @@ body {
   padding-left: 60px;
 
   background-image:
-    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url("lmf-logo.png");
+    linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url("assets/lmf-logo.png");
 
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 155%;
-}}
-
-.hero-text h1 {
-  font-size: 3rem;
-  line-height: 1.2;
-}
-
-.hero-text p {
-  margin: 20px 0;
-  color: var(--light);
-}
-
-.btn {
-  padding: 12px 28px;
-  border: 1px solid var(--light);
-  color: var(--white);
-  text-decoration: none;
+  background-position: right center;
+  background-size: 55%;
 }
 
 /* ICON SERVICES */
