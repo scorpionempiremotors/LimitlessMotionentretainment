@@ -50,7 +50,7 @@ body {
 
   background-image:
     linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url("assets/lmf-logo.png");
+    url("lmf-logo.png");
 
   background-repeat: no-repeat;
   background-position: right center;
