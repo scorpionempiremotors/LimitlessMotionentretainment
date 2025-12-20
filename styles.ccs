@@ -1,6 +1,7 @@
 :root {
-  --black: #0b0b0b;
-  --silver: #cfcfcf;
+  --dark: #0b0b0b;
+  --mid: #1a1a1a;
+  --light: #cfcfcf;
   --white: #ffffff;
 }
 
@@ -11,128 +12,135 @@
   box-sizing: border-box;
 }
 
-/* BODY */
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: var(--black);
+  background: var(--dark);
   color: var(--white);
-  background-image: url("assets/lmf-logo.png");
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 45%;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background: rgba(0,0,0,0.85);
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.navbar a {
+  color: var(--light);
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.logo {
+  font-weight: 700;
 }
 
 /* HERO */
 .hero {
-  height: 100vh;
+  height: 90vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url("assets/lmf-logo.png");
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: right center;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85));
-  text-align: center;
+  padding-left: 60px;
 }
 
-.hero-content h1 {
-  font-size: 3.2rem;
-  letter-spacing: 3px;
+.hero-text h1 {
+  font-size: 3rem;
+  line-height: 1.2;
 }
 
-.hero-content p {
+.hero-text p {
   margin: 20px 0;
-  font-weight: 300;
-  color: var(--silver);
+  color: var(--light);
 }
 
-/* BUTTON */
 .btn {
-  display: inline-block;
-  padding: 14px 30px;
-  border: 1px solid var(--silver);
+  padding: 12px 28px;
+  border: 1px solid var(--light);
   color: var(--white);
   text-decoration: none;
-  transition: 0.3s;
 }
 
-.btn:hover {
-  background: var(--silver);
-  color: var(--black);
+/* ICON SERVICES */
+.icon-services {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 20px;
+  background: var(--mid);
 }
 
-/* SECTIONS */
-.section {
-  padding: 80px 20px;
-  max-width: 1100px;
-  margin: auto;
+.icon-box {
   text-align: center;
+  font-size: 1.1rem;
 }
 
-.section h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+.icon-box h3 {
+  margin-top: 10px;
+  font-size: 0.9rem;
 }
 
-.section p {
-  color: var(--silver);
-  max-width: 800px;
-  margin: auto;
-  line-height: 1.7;
-}
-
-.dark {
-  background: rgba(255,255,255,0.03);
-}
-
-/* SERVICES */
-.services {
+/* SPLIT SECTION */
+.split {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-  margin-top: 40px;
+  grid-template-columns: 1fr 1fr;
+  padding: 70px;
+  gap: 50px;
 }
 
-.service-card {
-  background: rgba(255,255,255,0.05);
-  padding: 30px;
-  border-radius: 8px;
+.split h2 {
+  margin-bottom: 15px;
 }
 
-.service-card h3 {
+.split p,
+.split ul {
+  color: var(--light);
+}
+
+.split ul li {
   margin-bottom: 10px;
 }
 
-/* CONTACT FORM */
-.contact-form {
+/* CONTACT */
+.contact {
+  background: var(--mid);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact form {
   max-width: 500px;
-  margin: 40px auto 0;
+  margin: auto;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.contact-form input,
-.contact-form textarea {
+.contact input,
+.contact textarea {
   padding: 12px;
-  border: none;
-  border-radius: 4px;
 }
 
-.contact-form button {
-  padding: 14px;
+.contact button {
+  padding: 12px;
   background: none;
-  border: 1px solid var(--silver);
+  border: 1px solid var(--light);
   color: var(--white);
-  cursor: pointer;
-}
-
-.contact-form button:hover {
-  background: var(--silver);
-  color: var(--black);
 }
 
 /* FOOTER */
 footer {
   padding: 20px;
   text-align: center;
-  font-size: 0.9rem;
-  color: var(--silver);
+  color: var(--light);
 }
